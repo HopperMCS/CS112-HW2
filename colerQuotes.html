@@ -1,0 +1,78 @@
+<!-- Exercise 4.10 -->
+<html>
+   <head>
+      <title>Computing Quotes</title>
+   </head>
+   <style>
+     body {
+       background: gray;
+     }
+   </style>
+   <body>
+      <center><h1>Computing Quotes</h1></center>
+      <table>
+         <tr>
+            <td style="border-bottom: solid; border-top: solid; padding: 10px;">
+               <input type="button" value="Dennis Ritchie"
+                      onclick="document.getElementById('outputDiv')
+                                       .innerHTML='I can\'t recall any difficulty in making the C ' +
+                                                  'language definition completely open ' +
+                                                  '- any discussion on the matter tended to mention languages ' +
+                                                  'whose inventors tried to keep tight control, and consequent ill fate. -- <i>Dennis Ritchie</i>';"> 
+               <input type="button" value="Reset"
+                      onclick="document.getElementById('outputDiv')
+                                       .innerHTML='To see a quote, either roll over an image above, or use one of the buttons!';">
+            </td>
+            
+            <td style="border-bottom: solid; border-top: solid; padding: 10px;">
+               <input type="button" value="Brian Kernighan"
+                      onclick="document.getElementById('outputDiv')
+                                       .innerHTML='Everyone knows that debugging is twice as hard as writing a program ' +
+                                                  'in the first place. So if you\'re as clever as you can be when you ' +
+                                                  'write it, how will you ever debug it? -- <i>Brian Kernighan</i>';">    
+               <input type="button" value="Reset"
+                      onclick="document.getElementById('outputDiv')
+                                       .innerHTML='To see a quote, either roll over an image above, or use one of the buttons!';">
+            </td>
+            
+            <td style="border-bottom: solid; border-top: solid; padding: 10px;">
+               <input type="button" value="Ken Thompson"
+                      onclick="document.getElementById('outputDiv')
+                                       .innerHTML='In college, before video games, we would amuse ourselves ' +
+                                                  'by posing programming exercises. -- <i>Ken Thompson</i>';">
+               <input type="button" value="Reset"
+                      onclick="document.getElementById('outputDiv')
+                                       .innerHTML='To see a quote, either roll over an image above, or use one of the buttons!';">
+            </td>
+         </tr>
+         <tr>
+            <td style="border-right: solid; padding: 5px;"><img src="images/dritchie.jpg" 
+                     onmouseover="document.getElementById('outputDiv')
+                                          .innerHTML='<p style=\'background-color: green; color: white;\'>I can\'t recall any difficulty in making the C ' +
+                                          'language definition completely open ' +
+                                          '- any discussion on the matter tended to mention languages ' +
+                                          'whose inventors tried to keep tight control, and consequent ill fate. -- <i>Dennis Ritchie</i>';" 
+                     onmouseout="document.getElementById('outputDiv')
+                                         .innerHTML='To see a quote, either roll over an image above, or use one of the buttons!';"></td>
+                                         
+            <td style="border-right: solid; padding: 5px;"><img src="images/bkernighan.png" 
+                     onmouseover="document.getElementById('outputDiv')
+                                          .innerHTML='<p style=\'background-color: pink; color: black;\'>Everyone knows that debugging is twice as hard as writing a program ' +
+                                                     'in the first place. So if you\'re as clever as you can be when you ' +
+                                                     'write it, how will you ever debug it? -- <i>Brian Kernighan</i>';"
+                     onmouseout="document.getElementById('outputDiv')
+                                         .innerHTML='To see a quote, either roll over an image above, or use one of the buttons!';"></td>
+                                         
+            <td style="padding: 5px"><img src="images/kthompson.jpg" 
+                     onmouseover="document.getElementById('outputDiv')
+                                          .innerHTML='<p style=\'background-color: blue; color: white;\'>In college, before video games, we would amuse ourselves ' +
+                                                     'by posing programming exercises. -- <i>Ken Thompson</i>';"
+                     onmouseout="document.getElementById('outputDiv')
+                                         .innerHTML='To see a quote, either roll over an image above, or use one of the buttons!';"></td>
+         </tr>
+      </table><hr>
+      <div id="outputDiv">To see a quote, either roll over an image above, or use one of the buttons!</div>
+   </body>
+</html>
+      
+      

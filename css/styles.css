@@ -1,0 +1,36 @@
+body { 
+  background: lightblue;
+}
+
+h1 { 
+  text-align: center; 
+  color: green; 
+  font-family: Tahoma;
+}
+
+p { 
+  color: purple;
+  border-style: dashed;
+  font-style: italic;
+}
+
+table, td { 
+  border-style: solid;
+}
+
+li { 
+  font-weight: bold;
+}
+
+a {
+  color: pink;
+}
+
+a:hover {
+  color: green;
+}
+
+a:visited {
+  color: blue;
+}
+
